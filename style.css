@@ -18,6 +18,11 @@
   background-color: rgb(5, 121, 5);
 }
 
+
+
+
+
+
 /* categories item cards hover */
 .card-1 {
   display: flex;
@@ -34,7 +39,11 @@
   align-items: center;        
   cursor: pointer;
   transition: 0.3s;
-  gap: 15px;                   
+  gap: 15px;  
+  
+  
+
+  
 }
 
 .card img {

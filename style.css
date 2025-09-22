@@ -17,3 +17,50 @@
 .primary-btn:hover{
   background-color: rgb(5, 121, 5);
 }
+
+/* categories item cards hover */
+.card-1 {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: #e5e7eb; 
+  width: 290px;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;               
+  flex-direction: row;         
+  align-items: center;        
+  cursor: pointer;
+  transition: 0.3s;
+  gap: 15px;                   
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  padding: 12px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card:hover {
+  background: #aa1010;
+  color: #fff;
+}
+
+.card:hover img {
+  background: #b91111;
+}

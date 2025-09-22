@@ -23,12 +23,12 @@
     <title>Foodix</title>
   </head>
   <body>
-    <!-- header section -->
+    <!--================= header section ==================-->
     <header
-      class="bg-[url('./images/hero/hero-four_bg.png')] bg-[#000000e7] h-[900px]"
+      class="bg-[url('./images/hero/hero-four_bg.png')] bg-[#000000] h-[1020px] md:h-[860px]"
     >
-      <!-- navbar section -->
-      <div class="navbar shadow-sm max-w-[1480px] mx-auto">
+      <!--===================== navbar section ============= -->
+      <div class="navbar shadow-sm max-w-[1480px] mx-auto sm:p-3">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -135,9 +135,9 @@
         </div>
       </div>
 
-      <!--main hero section-->
+      <!--=================main hero section================-->
       <div
-        class="flex flex-col-reverse md:flex-row items-center mt-10 mx-auto max-w-[1380px]"
+        class="flex flex-col-reverse md:flex-row items-center mt-28 mx-auto max-w-[1380px] p-4"
       >
         <!-- left (text) -->
         <div
@@ -164,14 +164,37 @@
         </div>
 
         <!-- right (image) -->
-        <div class="md:w-1/2 flex justify-center mb-6 md:mb-0">
+        <div class="md:w-1/2 flex justify-center mb-6 md:mb-0 relative">
           <img
             src="./images/hero/hero-four_img1.png"
             alt=""
-            class="w-3/4 md:w-full"
+            class="w-3/4 md:w-[90%]"
+          />
+          <img
+            src="./images/hero/text-03.png"
+            alt=""
+            class="absolute top-0 right-[190px] sm:right-48 md:right-64 lg:left-0 transform -rotate-45"
           />
         </div>
       </div>
     </header>
+
+    <!--===================== main section=================== -->
+    <main>
+      <!-- Our Categories Section -->
+      <section class="max-w-[1380px] border-2 border-red-600 mx-auto mt-10">
+        <!-- categories ---1 -->
+        <div class="flex flex-col md:flex-row items-center justify-between p-3">
+          <h1 class="text-[2.6rem] md:text-[3.2rem] font-extrabold">
+            OUR CATEGORIES
+          </h1>
+          <a
+            href=""
+            class="bg-white border-1 border-red-700 w-52 h-16 text-center font-semibold text-3xl text-[#6b6969] px-8 py-3 rounded-lg"
+            >See More</a
+          >
+        </div>
+      </section>
+    </main>
   </body>
 </html>

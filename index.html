@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Aos Link cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- font awesome cdn -->
     <link
       rel="stylesheet"
@@ -25,10 +28,12 @@
   <body>
     <!--================= header section ==================-->
     <header
-      class="bg-[url('./images/hero/hero-four_bg.png')] bg-[#000000] h-[980px] md:h-[860px]"
+      class="bg-[url('./images/hero/hero-four_bg.png')] bg-[#000000] h-[980px] md:h-[860px] z-10"
     >
       <!--===================== navbar section ============= -->
-      <div class="navbar shadow-sm max-w-[1480px] mx-auto sm:p-3">
+      <div
+        class="navbar shadow-sm max-w-[1480px] mx-auto sm:p-3 z-30 sticky top-0"
+      >
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -62,7 +67,10 @@
               <li><a>Item 3</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl"
+          <a
+            class="btn btn-ghost text-xl"
+            data-aos="fade-right"
+            data-aos-duration="1500"
             ><img
               src="./images/logo/logo-white.png"
               alt=""
@@ -70,7 +78,7 @@
           /></a>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
+          <ul class="menu menu-horizontal px-1 z-50">
             <li>
               <details>
                 <summary>Parent</summary>
@@ -120,12 +128,12 @@
         </div>
         <div class="navbar-end">
           <a
-            class="btn primary-btn shadow-none border-none max-w-[180px] font-semibold text-sm md:text-lg"
+            class="btn primary-btn shadow-none border-none max-w-[110px] md:max-w-[180px] font-semibold text-sm md:text-lg"
             >Book A Table</a
           >
         </div>
         &nbsp; &nbsp; &nbsp;
-        <div class="bg-[#038b0f] rounded-xl p-3">
+        <div class="bg-[#038b0f] rounded-xl p-3" data-aos="fade-right">
           <a href=""
             ><img
               src="./images/icon/shopping-cart.png"
@@ -169,6 +177,8 @@
             src="./images/hero/hero-four_img1.png"
             alt=""
             class="w-3/4 md:w-[90%]"
+            data-aos="fade-left"
+            data-aos-duration="1500"
           />
           <img
             src="./images/hero/text-03.png"
@@ -248,7 +258,12 @@
       >
         <!-- image section -->
         <div class="md:w-1/2 flex items-center justify-center">
-          <img src="./images/about/about-6.png" alt="about" />
+          <img
+            src="./images/about/about-6.png"
+            alt="about"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          />
         </div>
 
         <!-- text section -->
@@ -257,7 +272,12 @@
         >
           <!-- sub div-1 -->
           <div class="flex gap-3 items-center mb-4">
-            <img src="./images/icon/002-food-tray.png" alt="about-logo" />
+            <img
+              src="./images/icon/002-food-tray.png"
+              alt="about-logo"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            />
             <p class="text-[#f0c60c] font-bold text-lg">About us</p>
           </div>
 
@@ -316,7 +336,12 @@
             <div
               class="flex gap-3 items-center justify-center md:justify-start mb-4"
             >
-              <img src="./images/icon/002-food-tray.png" alt="about-logo" />
+              <img
+                src="./images/icon/002-food-tray.png"
+                alt="about-logo"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+              />
               <p class="text-[#f0c60c] font-bold text-lg">Get 25% Discount</p>
             </div>
 
@@ -378,6 +403,8 @@
               src="./images/bg/offer-img1.png"
               alt="burger-banner"
               class="max-w-[90%] md:max-w-full"
+              data-aos="fade-left"
+              data-aos-duration="1500"
             />
           </div>
 
@@ -386,6 +413,8 @@
             src="./images/bg/bn-img-6.png"
             alt=""
             class="absolute right-0 top-0 max-w-[25%] sm:max-w-[20%]"
+            data-aos="zoom-out-left"
+            data-aos-duration="3000"
           />
         </div>
       </section>
@@ -406,5 +435,14 @@
         </div>
       </section>
     </main>
+
+    <!-- aos js cdn  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- initialize aos -->
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
   </body>
 </html>

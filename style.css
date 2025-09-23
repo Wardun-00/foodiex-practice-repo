@@ -75,3 +75,24 @@
 }
 
 
+/* section 4 cards */
+.section-4-cards{
+transition: all 0.3s ease;
+}
+
+.section-4-cards img{
+  transition: filter 0.3s ease;
+}
+
+.section-4-cards:hover img {
+  filter: brightness(0) invert(1); /* turns white */
+}
+
+.section-4-cards:hover{
+  background-color:#b91111;
+  color: white;
+}
+
+.section-4-cards:hover p{
+  color: white;
+}

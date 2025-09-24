@@ -109,3 +109,24 @@ transition: all 0.3s ease;
 .primary-btn-2:hover{
   background-color: rgb(194, 194, 3);
 }
+
+
+/* Explore Our delicious menu section */
+.menu-item-1st, .menu-txt h3 , .menu-txt p{
+transition: all 110ms ease-in-out 40ms;
+} 
+
+.menu-item-1st:hover{
+  background-color: rgb(11, 179, 11);
+
+}
+
+
+
+.menu-item-1st:hover .menu-txt h3{
+  color: white;
+}
+
+.menu-item-1st:hover .menu-txt p{
+  color: rgb(224, 224, 224);
+}

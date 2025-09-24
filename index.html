@@ -822,7 +822,7 @@
       </section>
 
       <!--=========section-6 (Your Carousel Section)==== -->
-      <section class="mt-14">
+      <section class="mt-14" data-aos="fade-down" data-aos-duration="1500">
         <div class="owl-carousel">
           <div class="item">
             <img src="./images/gallery/gallery-18.jpg" alt="Chocolate Cake" />
@@ -876,12 +876,16 @@
           stagePadding: 0,
           nav: true,
           autoplay: true,
+          dots: false,
           autoplayTimeout: 2500,
           autoplayHoverPause: true,
           responsive: {
-            0: { items: 2 },
+            0: { items: 1 },
+            480: { items: 2 },
             768: { items: 3 },
-            1024: { items: 5 },
+            992: { items: 4 },
+            1200: { items: 5 },
+            1400: { items: 6 },
           },
         });
       });

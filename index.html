@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Aos Link cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Owl Carousel CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
 
     <!-- font awesome cdn -->
     <link
@@ -212,7 +221,7 @@
           data-aos-duration="1500"
         >
           <!-- categories-cards-1 -->
-          <div class="cards-1" data-aos="fade-right" data-aos-duration="3000">
+          <div class="cards-1" data-aos="fade-right" data-aos-duration="2000">
             <div class="card">
               <img src="./images/icon/burger.png" alt="Burger" />
               <div>
@@ -222,7 +231,7 @@
             </div>
           </div>
           <!-- categories-cards-2 -->
-          <div class="cards-1" data-aos="fade-down" data-aos-duration="3000">
+          <div class="cards-1" data-aos="fade-down" data-aos-duration="2000">
             <div class="card">
               <img src="./images/icon/sandwich.png" alt="Burger" />
               <div>
@@ -232,7 +241,7 @@
             </div>
           </div>
           <!-- categories-cards-3 -->
-          <div class="cards-1" data-aos="fade-up" data-aos-duration="3000">
+          <div class="cards-1" data-aos="fade-up" data-aos-duration="2000">
             <div class="card">
               <img src="./images/icon/shrimp.png" alt="Burger" />
               <div>
@@ -242,7 +251,7 @@
             </div>
           </div>
           <!-- categories-cards-4 -->
-          <div class="cards-1" data-aos="fade-left" data-aos-duration="3000">
+          <div class="cards-1" data-aos="fade-left" data-aos-duration="2000">
             <div class="card">
               <img src="./images/icon/pasta.png" alt="Burger" />
               <div>
@@ -811,7 +820,72 @@
           </div>
         </div>
       </section>
+
+      <!--=========section-6 (Your Carousel Section)==== -->
+      <section class="mt-14">
+        <div class="owl-carousel">
+          <div class="item">
+            <img src="./images/gallery/gallery-18.jpg" alt="Chocolate Cake" />
+            <div class="overlay">
+              <div class="title">Chocolate Cake</div>
+              <div class="price">$12</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./images/gallery/gallery-15.jpg" alt="Family Pizza" />
+            <div class="overlay">
+              <div class="title">Family Pizza</div>
+              <div class="price">$28</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./images/gallery/gallery-14.jpg" alt="Choco Muffins" />
+            <div class="overlay">
+              <div class="title">Chess Burger</div>
+              <div class="price">$18</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./images/gallery/gallery-16.jpg" alt="Choco Muffins" />
+            <div class="overlay">
+              <div class="title">chess Meet</div>
+              <div class="price">$20</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./images/gallery/gallery-17.jpg" alt="Choco Muffins" />
+            <div class="overlay">
+              <div class="title">chess Salat</div>
+              <div class="price">$10</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Owl carousel js and jquery link -->
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 0,
+          stagePadding: 0,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 2500,
+          autoplayHoverPause: true,
+          responsive: {
+            0: { items: 2 },
+            768: { items: 3 },
+            1024: { items: 5 },
+          },
+        });
+      });
+    </script>
 
     <!-- aos js cdn  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

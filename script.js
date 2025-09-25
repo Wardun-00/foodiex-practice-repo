@@ -67,8 +67,22 @@
 
 
 
+// ===================================
+ 
+  const footer = document.querySelector('footer');
+  const bg = document.getElementById('footer-bg');
 
+  footer.addEventListener('mousemove', (e) => {
+    const { width, height, left, top } = footer.getBoundingClientRect();
+    const x = (e.clientX - left) / width - 0.5; // -0.5 to 0.5
+    const y = (e.clientY - top) / height - 0.5;
 
+    // Subtle background movement
+    bg.style.transform = `translate(${x * 20}px, ${y * 20}px) scale(1.05)`;
+  });
 
+  footer.addEventListener('mouseleave', () => {
+    bg.style.transform = 'translate(0,0) scale(1)';
+  });
 
 

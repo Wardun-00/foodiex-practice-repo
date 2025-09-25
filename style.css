@@ -132,14 +132,14 @@ transition: all 110ms ease-in-out 40ms;
 }
 
 
-
-/*  */
+/* Carousel item */
 .owl-carousel .item {
   position: relative;
   overflow: hidden;
   height: 380px;
 }
 
+/* Image style */
 .owl-carousel .item img {
   width: 100%;
   height: 100%;
@@ -147,18 +147,19 @@ transition: all 110ms ease-in-out 40ms;
   transition: transform 0.5s ease;
 }
 
+/* Zoom image on hover */
 .owl-carousel .item:hover img {
   transform: scale(1.1);
 }
 
-/* overlay with gradient background */
+/* Overlay */
 .owl-carousel .item .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.767) 30%, rgba(0,0,0,0.0) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.77) 30%, rgba(0,0,0,0) 100%);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -169,10 +170,12 @@ transition: all 110ms ease-in-out 40ms;
   transition: opacity 0.5s ease;
 }
 
+/* Show overlay on hover */
 .owl-carousel .item:hover .overlay {
   opacity: 1;
 }
 
+/* Overlay text */
 .owl-carousel .item .overlay .title {
   font-weight: bold;
   font-size: 18px;
@@ -182,3 +185,26 @@ transition: all 110ms ease-in-out 40ms;
 .owl-carousel .item .overlay .price {
   font-size: 16px;
 }
+
+
+.swiper-slide div:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

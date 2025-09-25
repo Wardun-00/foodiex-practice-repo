@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Aos Link cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CDN Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- Owl Carousel CDN -->
     <link
       rel="stylesheet"
@@ -41,9 +46,12 @@
     >
       <!--===================== navbar section ============= -->
       <div
+        id="navbar"
         class="navbar shadow-sm max-w-[1480px] mx-auto sm:p-3 z-30 sticky top-0"
       >
-        <div class="navbar-start">
+        <div
+          class="navbar-start navbar shadow-sm max-w-[1480px] mx-auto sm:p-3"
+        >
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
@@ -88,10 +96,10 @@
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 z-50">
-            <li>
+            <li class="text-white font-bold text-xl">
               <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
+                <summary>Home</summary>
+                <ul class="p-2 text-black">
                   <li><a>Submenu 1</a></li>
                   <li><a>Submenu 2</a></li>
                 </ul>
@@ -99,8 +107,8 @@
             </li>
             <li class="text-white font-bold text-xl">
               <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
+                <summary>Menu</summary>
+                <ul class="p-2 text-black">
                   <li><a>Submenu 1</a></li>
                   <li><a>Submenu 2</a></li>
                 </ul>
@@ -108,8 +116,8 @@
             </li>
             <li class="text-white font-bold text-xl">
               <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
+                <summary>Pages</summary>
+                <ul class="p-2 text-black">
                   <li><a>Submenu 1</a></li>
                   <li><a>Submenu 2</a></li>
                 </ul>
@@ -117,8 +125,8 @@
             </li>
             <li class="text-white font-bold text-xl">
               <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
+                <summary>Shop</summary>
+                <ul class="p-2 text-black">
                   <li><a>Submenu 1</a></li>
                   <li><a>Submenu 2</a></li>
                 </ul>
@@ -126,8 +134,8 @@
             </li>
             <li class="text-white font-bold text-xl">
               <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
+                <summary>Blog</summary>
+                <ul class="p-2 text-black">
                   <li><a>Submenu 1</a></li>
                   <li><a>Submenu 2</a></li>
                 </ul>
@@ -1001,6 +1009,138 @@
             What Our Guests Say About Us
           </h1>
         </div>
+
+        <!-- Swiper Carousel -->
+        <div class="w-full py-10">
+          <div class="swiper mySwiper max-w-6xl mx-auto px-6">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div
+                  class="bg-white border border-dashed border-gray-300 p-6 rounded-xl shadow-sm"
+                >
+                  <div class="flex items-center gap-1 text-yellow-500 mb-3">
+                    ⭐⭐⭐⭐⭐
+                  </div>
+                  <p class="text-gray-600 mb-6">
+                    From the moment we walked in, we were impressed by the warm
+                    and inviting atmosphere...
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <img
+                        src="https://i.pravatar.cc/50"
+                        class="w-12 h-12 rounded-full"
+                      />
+                      <div>
+                        <h4 class="font-bold text-gray-900">David Liam</h4>
+                        <p class="text-sm text-gray-500">CEO</p>
+                      </div>
+                    </div>
+                    <span
+                      class="bg-green-600 text-white font-bold px-3 py-1 rounded-full"
+                      >99</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div
+                  class="bg-white border border-dashed border-gray-300 p-6 rounded-xl shadow-sm"
+                >
+                  <div class="flex items-center gap-1 text-yellow-500 mb-3">
+                    ⭐⭐⭐⭐⭐
+                  </div>
+                  <p class="text-gray-600 mb-6">
+                    From the moment we walked in, we were impressed by the warm
+                    and inviting atmosphere...
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <img
+                        src="https://i.pravatar.cc/51"
+                        class="w-12 h-12 rounded-full"
+                      />
+                      <div>
+                        <h4 class="font-bold text-gray-900">John Doe</h4>
+                        <p class="text-sm text-gray-500">Manager</p>
+                      </div>
+                    </div>
+                    <span
+                      class="bg-green-600 text-white font-bold px-3 py-1 rounded-full"
+                      >98</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div
+                  class="bg-white border border-dashed border-gray-300 p-6 rounded-xl shadow-sm"
+                >
+                  <div class="flex items-center gap-1 text-yellow-500 mb-3">
+                    ⭐⭐⭐⭐⭐
+                  </div>
+                  <p class="text-gray-600 mb-6">
+                    From the moment we walked in, we were impressed by the warm
+                    and inviting atmosphere...
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <img
+                        src="https://i.pravatar.cc/51"
+                        class="w-12 h-12 rounded-full"
+                      />
+                      <div>
+                        <h4 class="font-bold text-gray-900">John Doe</h4>
+                        <p class="text-sm text-gray-500">Manager</p>
+                      </div>
+                    </div>
+                    <span
+                      class="bg-green-600 text-white font-bold px-3 py-1 rounded-full"
+                      >98</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <div
+                  class="bg-white border border-dashed border-gray-300 p-6 rounded-xl shadow-sm"
+                >
+                  <div class="flex items-center gap-1 text-yellow-500 mb-3">
+                    ⭐⭐⭐⭐⭐
+                  </div>
+                  <p class="text-gray-600 mb-6">
+                    From the moment we walked in, we were impressed by the warm
+                    and inviting atmosphere...
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <img
+                        src="https://i.pravatar.cc/51"
+                        class="w-12 h-12 rounded-full"
+                      />
+                      <div>
+                        <h4 class="font-bold text-gray-900">John Doe</h4>
+                        <p class="text-sm text-gray-500">Manager</p>
+                      </div>
+                    </div>
+                    <span
+                      class="bg-green-600 text-white font-bold px-3 py-1 rounded-full"
+                      >98</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ✅ Pagination outside wrapper -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -1011,7 +1151,7 @@
 
     <script>
       $(document).ready(function () {
-        // আগের carousel JS
+        //  carousel JS
         $(".owl-carousel").owlCarousel({
           loop: true,
           margin: 0,
@@ -1033,6 +1173,29 @@
       });
     </script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: { slidesPerView: 1, spaceBetween: 10 }, // mobile
+          768: { slidesPerView: 2, spaceBetween: 20 }, // tablet
+          1024: { slidesPerView: 2, spaceBetween: 30 }, // desktop
+        },
+      });
+    </script>
+
     <!-- aos js cdn  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- initialize aos -->
@@ -1041,5 +1204,8 @@
         once: true,
       });
     </script>
+
+    <!-- script js -->
+    <script src="./script.js"></script>
   </body>
 </html>
